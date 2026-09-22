@@ -5,7 +5,7 @@ export function Disclosure() {
     <aside className="disclosure" aria-label="Content processing disclosure">
       <span className="disclosure-mark" aria-hidden="true">#</span>
       <span>
-        <strong>Before you analyze.</strong> When you choose to analyze content, MVD sends the selected or visible page text and relevant page context to our secure analysis service to generate your result. <Link className="text-link" href="/privacy">See our Privacy Policy</Link>.
+        <strong>Before you analyze.</strong> MVD sends content only after you request an analysis. Depending on the mode you choose, this may include selected text, text from a chosen element, or visible page text, together with the current page URL and—in full-page mode—the page title. <Link className="text-link" href="/privacy">See our Privacy Policy</Link>.
       </span>
     </aside>
   );

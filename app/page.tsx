@@ -9,7 +9,7 @@ export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 const faqs = [
   ["Is MVD a fact-checker?", "No. MVD identifies linguistic and rhetorical risk signals in text. It does not determine whether an individual claim is true or false. Important claims should be checked against reliable primary sources."],
-  ["What data is analyzed?", "Only when you ask MVD to run, it can process selected text, a page element, or visible article text, plus relevant context such as the page URL and title."],
+  ["What data is analyzed?", "Only after you request an analysis, MVD sends either selected text, text from a chosen element, or visible page text. The current URL is included; the page title is included for full-page analysis. MVD does not send screenshots, cookies, the page HTML, or your full browsing history."],
   ["Does it work on every website?", "MVD is designed for accessible webpage text. Browser-restricted pages, image-only content, complex applications, and paywalled material may not be available for analysis."],
   ["What does the risk index mean?", "It is a summary indicator of detected language patterns—not a probability that the article is false. Interpret it together with the individual signals, their explanations, and the source itself."],
   ["How can I report a problem or request deletion?", "Visit Support for the current contact process. Contact details and record-retention terms are marked as pending until the operator information is confirmed."],

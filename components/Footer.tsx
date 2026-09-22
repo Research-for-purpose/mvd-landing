@@ -20,7 +20,7 @@ export function Footer() {
           </nav>
         </div>
         <div className="footer-bottom">
-          <span>© [TODO: YEAR AND LEGAL OWNER] MVD</span>
+          <span>© 2026 Research for Purpose · MVD</span>
           <span>Assessment aid · Not a fact-checking service</span>
         </div>
       </div>

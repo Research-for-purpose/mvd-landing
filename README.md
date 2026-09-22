@@ -41,14 +41,16 @@ No analytics or collection service is configured. If one is added later, update 
 Search the project for `TODO before launch` and resolve every item. In particular:
 
 - legal owner and jurisdiction;
-- public website domain;
+- final MVD website domain;
 - support and privacy email address;
 - Chrome Web Store listing URL;
-- content, invite, and session record-retention periods;
-- deletion-request process;
-- complete subprocessor list and processing locations;
+- Cloudflare log, D1 record, and backup-retention periods;
+- deletion-request channel, identity matching, and response period;
+- Survona retention, training, human-review, and processing-location terms;
+- OpenAI project Data Controls and `store` configuration;
+- complete provider list and processing locations;
 - international-transfer and jurisdiction-specific legal language;
-- copyright year and owner in the footer.
+- Chrome Web Store category, distribution, screenshots, and test access.
 
 The visible TODO notices are intentional. They prevent the draft policy and terms from implying facts that have not been confirmed.
 
