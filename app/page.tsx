@@ -12,7 +12,7 @@ const faqs = [
   ["What data is analyzed?", "Only after you request an analysis, MVD sends either selected text, text from a chosen element, or visible page text. The current URL is included; the page title is included for full-page analysis. MVD does not send screenshots, cookies, the page HTML, or your full browsing history."],
   ["Does it work on every website?", "MVD is designed for accessible webpage text. Browser-restricted pages, image-only content, complex applications, and paywalled material may not be available for analysis."],
   ["What does the risk index mean?", "It is a summary indicator of detected language patterns—not a probability that the article is false. Interpret it together with the individual signals, their explanations, and the source itself."],
-  ["How can I report a problem or request deletion?", "Visit Support for the current contact process. Contact details and record-retention terms are marked as pending until the operator information is confirmed."],
+  ["How can I report a problem or request deletion?", "For privacy or deletion requests, email javad@ai4mission.com or javad@aiformission.com. Visit Support for guidance on reporting a product issue."],
 ];
 
 export default function Home() {

@@ -18,14 +18,12 @@ export default function SupportPage() {
     >
       <section>
         <h2>Contact support</h2>
-        <p>A dedicated MVD support address has not yet been confirmed. Research for Purpose currently provides a general organizational contact page for public inquiries.</p>
+        <p>For privacy or deletion requests, contact AI for the Mission Inc. at either email address below. For product issues, use the Research for Purpose contact page.</p>
+        <p><a className="text-link" href="mailto:javad@ai4mission.com">javad@ai4mission.com</a><br /><a className="text-link" href="mailto:javad@aiformission.com">javad@aiformission.com</a></p>
         <p>
           <a className="text-link" href="https://www.researchforpurpose.com/contact-us/" target="_blank" rel="noreferrer">
             Visit the Research for Purpose contact page ↗
           </a>
-        </p>
-        <p className="todo">
-          <strong>TODO before launch:</strong> Confirm whether the existing contact is authorized to handle MVD support and privacy requests, or publish dedicated support and privacy email addresses.
         </p>
       </section>
 
@@ -52,10 +50,7 @@ export default function SupportPage() {
         <p>
           MVD can technically remove identifiable invite, session, usage, installation, and timestamp records from its database. Analyzed text, page URLs, titles, and results are not stored in that database. The extension does not yet provide self-service deletion or show the installation identifier needed to match a request.
         </p>
-        <p>Never send an active session token by email.</p>
-        <p className="todo">
-          <strong>TODO before launch:</strong> Establish the official deletion-request address, a safe way to identify the relevant installation without exposing a session token, the response period, and the treatment of provider logs and retained content.
-        </p>
+        <p>Send deletion requests to either address in the Contact support section. We may ask for additional details to locate the relevant records. Never send an active session token by email. MVD responds within the time required by applicable privacy law; provider-held records are handled under the provider’s terms and controls.</p>
       </section>
     </PageShell>
   );
