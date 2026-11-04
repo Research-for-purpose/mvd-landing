@@ -13,17 +13,17 @@ export default function PrivacyPage() {
       eyebrow="Privacy policy"
       title="Privacy, in plain English."
       lede="This policy explains what MVD processes when you request an analysis, why that processing is necessary, and where information may be retained."
-      meta="Draft · Last updated 22 September 2026"
+      meta="Draft · Updated 4 November 2026"
       sideTitle="Draft status"
-      sideText="The technical data flow is documented below. The remaining orange notices identify operator, provider, retention, and rights details that must be confirmed before public launch."
+      sideText="The technical data flow is documented below. The remaining orange notices identify decisions and production settings that still need confirmation before publication."
     >
       <section>
         <h2>Operator and scope</h2>
         <p>
-          MVD is presented under the public name <strong>Research for Purpose</strong>, founded by Remy Smida. This policy applies to the MVD Chrome extension and its supporting analysis service.
+          MVD is a browser extension offered as an add-on through the <strong>Survona</strong> platform at <a href="https://www.survona.com/">survona.com</a>. Survona is hosted on Microsoft Azure. MVD will have its own public domain; its Vercel-hosted landing page will direct users to the Google Chrome Web Store to download the extension. This policy applies to the MVD extension and its supporting analysis service.
         </p>
         <p className="todo">
-          <strong>TODO before launch:</strong> Identify the legal person or entity that operates MVD, its country and jurisdiction, the final MVD domain, any legally required postal address, and the official privacy contact.
+          <strong>TODO before launch:</strong> Confirm the exact registered name of the operator, the extension’s final domain, and the official privacy contact. The answer sheet identifies IA pour la Mission inc. in Québec, Canada, and provides a postal address; confirm the published legal details before launch.
         </p>
         <p>Until those details are confirmed, references to “MVD,” “we,” and “our” in this draft mean the future confirmed operator of the service.</p>
       </section>
@@ -76,19 +76,22 @@ export default function PrivacyPage() {
           <li>apply service quotas and protect the service from abuse;</li>
           <li>diagnose errors and maintain the security and reliability of the service.</li>
         </ul>
+        <p>MVD does not personalize analyses or the product experience based on a user profile.</p>
       </section>
 
       <section>
         <h2>Service providers and disclosures</h2>
         <p>MVD currently relies on the following services to provide its user-requested functionality:</p>
         <ul>
-          <li><strong>Cloudflare Workers</strong> operates the authenticated MVD API; <strong>Cloudflare D1</strong> stores invite, session, installation, and quota records; and Cloudflare’s network and security systems process request metadata.</li>
-          <li><strong>Survona FakeSpotter API</strong> receives the text submitted for misinformation-signal analysis and the required model, language, and run parameters. MVD does not send Survona the page URL, page title, installation identifier, or MVD session token.</li>
-          <li><strong>OpenAI API</strong> is used to clean and structure visible text during full-page analysis and to translate selected text or completed analysis fields. For full-page analysis, OpenAI receives the page URL, title, and visible text blocks.</li>
+          <li><strong>Microsoft Azure</strong> hosts the Survona platform and provides Azure Communication Services for notification emails.</li>
+          <li><strong>Vercel</strong> hosts the separate MVD marketing landing page. Its download link directs visitors to the Google Chrome Web Store; it does not host the Survona platform or MVD analysis service.</li>
+          <li><strong>Cloudflare Workers</strong> operates the authenticated MVD API and performs an initial request-filtering step; <strong>Cloudflare D1</strong> stores invite, session, installation, and quota records; and Cloudflare’s network and security systems process request metadata.</li>
+          <li><strong>OpenAI API</strong> performs an initial content-filtering and text-structuring step before Survona analysis, and translates selected text or completed analysis fields. For full-page analysis, OpenAI receives the page URL, title, and visible text blocks.</li>
+          <li><strong>Survona FakeSpotter API</strong> receives text after the initial filtering steps for misinformation-signal analysis and the required model, language, and run parameters. MVD does not send Survona the page URL, page title, installation identifier, or MVD session token.</li>
         </ul>
         <p>MVD does not sell user data or disclose it to advertising platforms, data brokers, or third parties for marketing profiling.</p>
         <p className="todo">
-          <strong>TODO before launch:</strong> Confirm the final provider list, the production website host, the email/support provider, any backup provider, and Survona’s retention, training, human-review, and processing-location terms.
+          <strong>TODO before launch:</strong> Confirm any additional or backup providers, the email/support provider, and Survona’s retention, training, human-review, and processing-location terms.
         </p>
       </section>
 
@@ -110,10 +113,10 @@ export default function PrivacyPage() {
 
         <h3>At service providers</h3>
         <p>
-          MVD does not use API content to train its own models. Under OpenAI’s standard API controls, API data is not used to train OpenAI models unless the API account owner opts in. OpenAI may retain API content and related abuse-monitoring data for up to 30 days under standard settings; the current MVD integration does not explicitly set <code>store: false</code>.
+          Zero Data Retention is the required launch configuration on the MVD service side and for Survona’s model processing. OpenAI handles an earlier filtering step, so its retention controls must be verified separately. Until those controls are confirmed, standard OpenAI abuse-monitoring settings may retain API content for up to 30 days; every applicable Responses API request must also be checked for <code>store: false</code>.
         </p>
         <p className="todo">
-          <strong>TODO before launch:</strong> Verify the MVD OpenAI project’s effective Data Controls and whether <code>store: false</code>, Modified Abuse Monitoring, or Zero Data Retention will be used. Obtain written retention and training terms from Survona and confirm Cloudflare log retention.
+          <strong>TODO before launch:</strong> Verify what data Cloudflare, OpenAI, and Survona each receive; confirm Zero Data Retention is enabled on the MVD and Survona model paths; verify OpenAI’s effective Data Controls and <code>store: false</code> on every applicable request; and obtain written retention, training, human-review, and processing-location terms from Survona. Confirm Cloudflare log retention.
         </p>
       </section>
 
@@ -137,9 +140,10 @@ export default function PrivacyPage() {
 
       <section>
         <h2>International processing</h2>
+        <p>The current launch plan includes users in Canada and the European Union, subject to final confirmation.</p>
         <p>Cloudflare operates a global edge network, and other providers may process information outside the user’s country.</p>
         <p className="todo">
-          <strong>TODO before launch:</strong> Confirm the operator’s jurisdiction, Cloudflare D1 location, provider processing regions, applicable international transfers, and any required transfer safeguards.
+          <strong>TODO before launch:</strong> Confirm the final launch scope; resolve whether an EU representative is needed and who will serve; and confirm the Cloudflare D1 location, provider processing regions, international transfers, and transfer safeguards.
         </p>
       </section>
 
