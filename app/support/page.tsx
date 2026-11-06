@@ -37,6 +37,7 @@ export default function SupportPage() {
           <li>the visible error message, if any.</li>
         </ul>
         <p>If an example is necessary, remove personal, confidential, or copyrighted content that is not essential to the report.</p>
+        <p>If troubleshooting requires a specific excerpt of analyzed content, we will explain why and ask for your explicit consent before anyone on the MVD team reviews it. Do not send page content unless we request it and you agree.</p>
       </section>
 
       <section>

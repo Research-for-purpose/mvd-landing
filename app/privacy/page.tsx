@@ -13,17 +13,17 @@ export default function PrivacyPage() {
       eyebrow="Privacy policy"
       title="Privacy, in plain English."
       lede="This policy explains what MVD processes when you request an analysis, why that processing is necessary, and where information may be retained."
-      meta="Last updated 4 November 2026"
+      meta="Last updated 6 November 2026"
       sideTitle="How MVD handles data"
       sideText="MVD analyzes page content only after you request an analysis. This policy explains what information is used, which services help process it, and how to contact us about your data."
     >
       <section>
         <h2>Operator and scope</h2>
         <p>
-          MVD is operated by <strong>AI for the Mission Inc.</strong> in Québec, Canada. It is offered as an add-on through the <strong>Survona</strong> platform at <a href="https://www.survona.com/">survona.com</a>. Survona is hosted on Microsoft Azure. The MVD landing page is hosted on Vercel and directs users to the Google Chrome Web Store to download the extension. This policy applies to the MVD extension and its supporting analysis service.
+          MVD is operated by <strong>AI for the Mission Inc.</strong> in Québec, Canada. It is offered as an add-on through the <strong>Survona</strong> platform at <a href="https://www.survona.com/">survona.com</a>. Survona is hosted on Microsoft Azure. The MVD landing page is hosted on Vercel and directs users to the Google Chrome Web Store to download the extension. This policy applies to the MVD public website, extension, and supporting analysis service.
         </p>
-        <p className="todo">
-          <strong>TODO:</strong> Add MVD’s final public domain here once it is selected.
+        <p>
+          The public MVD website is <a href="https://www.misinformationviralitydetector.app/">www.misinformationviralitydetector.app</a>.
         </p>
         <p>References to “MVD,” “we,” and “our” mean AI for the Mission Inc.</p>
       </section>
@@ -111,17 +111,22 @@ export default function PrivacyPage() {
 
         <h3>At service providers</h3>
         <p>
-          MVD’s launch configuration applies Zero Data Retention to its service-side model processing and Survona’s model processing. OpenAI performs an earlier filtering and text-structuring step. Retention for information sent to OpenAI follows the data controls enabled for the MVD API project and the terms that apply to that API service.
+          OpenAI and Survona process content to provide the filtering, structuring, translation, and analysis features described above. Retention of provider-held content, logs, or backups depends on the service, the endpoint used, the production settings, and the provider terms in effect. MVD does not promise that every provider-held copy is deleted immediately after a request. We will update this policy when provider-specific retention periods and controls are confirmed.
         </p>
       </section>
 
       <section>
         <h2>Limited use and human access</h2>
         <p>
+          MVD collects, uses, and transfers Chrome user data only as needed to provide, maintain, and secure the extension’s single user-facing purpose. This use complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. MVD does not use Chrome user data for personalized advertising or sell it.
+        </p>
+        <p>
           MVD uses user-requested content only to provide and maintain its analysis, extraction, translation, access-control, security, and support functions. It does not use or transfer that content for personalized advertising, marketing profiles, credit decisions, or sale to data brokers.
         </p>
-        <p>MVD does not provide the team with a routine interface for reading analyzed text and does not store that text in D1 or application logs.</p>
-        <p>MVD does not provide a routine interface for its team to read submitted page content. If access is necessary to respond to a support request, investigate a security or abuse issue, or meet a legal obligation, it is limited to what is needed for that purpose. Provider processing is subject to the provider’s own service terms and controls.</p>
+        <p>MVD does not provide its team with a routine interface for reading analyzed text and does not store that text in D1 or application logs.</p>
+        <p>
+          For a support request, we will ask for your explicit consent before a person reviews a specific excerpt of submitted content. Access without that consent is limited to what is necessary to investigate a security or abuse issue or to comply with law. Provider processing is subject to each provider’s own service terms and controls.
+        </p>
       </section>
 
       <section>

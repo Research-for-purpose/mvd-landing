@@ -32,7 +32,7 @@ npm run check
 
 ## Configuration
 
-Set `NEXT_PUBLIC_SITE_URL` to the canonical production origin, with no trailing slash. It is used for metadata, `robots.txt`, and `sitemap.xml`. On Vercel, the app automatically falls back to the project production URL (and then the preview URL), so this variable is optional until a custom domain is connected.
+Set `NEXT_PUBLIC_SITE_URL` to the canonical production origin, with no trailing slash. It is used for metadata, `robots.txt`, and `sitemap.xml`. The production fallback is `https://www.misinformationviralitydetector.app`; set the variable in Vercel if the canonical domain changes. Local development falls back to `http://localhost:3000`.
 
 No analytics or collection service is configured. If one is added later, update the privacy policy and obtain any consent required before enabling it.
 
@@ -40,9 +40,8 @@ No analytics or collection service is configured. If one is added later, update 
 
 Search the project for `TODO before launch` and resolve every item. In particular:
 
-- legal owner and jurisdiction;
-- final MVD website domain;
-- support and privacy email address;
+- legal owner, jurisdiction, and a publishable postal address;
+- `NEXT_PUBLIC_SITE_URL` set to the live canonical domain if overriding the production fallback;
 - Chrome Web Store listing URL;
 - Cloudflare log, D1 record, and backup-retention periods;
 - deletion-request channel, identity matching, and response period;
