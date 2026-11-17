@@ -36,13 +36,12 @@ Set `NEXT_PUBLIC_SITE_URL` to the canonical production origin, with no trailing 
 
 No analytics or collection service is configured. If one is added later, update the privacy policy and obtain any consent required before enabling it.
 
-## Required launch checklist
+## Outstanding release follow-up
 
-Search the project for `TODO before launch` and resolve every item. In particular:
+Search the project for `TODO to finalize these terms` and resolve every item. Confirm the following outstanding details:
 
 - legal owner, jurisdiction, and a publishable postal address;
 - `NEXT_PUBLIC_SITE_URL` set to the live canonical domain if overriding the production fallback;
-- Chrome Web Store listing URL;
 - Cloudflare log, D1 record, and backup-retention periods;
 - deletion-request channel, identity matching, and response period;
 - Survona retention, training, human-review, and processing-location terms;
@@ -61,6 +60,6 @@ No deployment is performed by this repository setup.
 2. Keep the detected framework preset as **Next.js**.
 3. If using a custom domain, add `NEXT_PUBLIC_SITE_URL` with the final HTTPS origin.
 4. Deploy and then verify every route, `robots.txt`, and `sitemap.xml`.
-5. Add the final domain, operator, contacts, retention facts, and store URL before public launch.
+5. Confirm the final domain, operator, contacts, and retention facts and update the relevant pages.
 
 The Vercel build command is `npm run build`; no custom output directory is required. The repository declares its supported Node.js runtime and uses Next.js’s supported webpack builder for reliable CSS processing in restricted build environments.

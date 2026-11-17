@@ -15,13 +15,13 @@ export default function TermsPage() {
       lede="These terms describe MVD’s intended function, responsible-use boundaries, and the limits of its automated assessments."
       meta="Draft · Last updated 22 September 2026"
       sideTitle="Draft status"
-      sideText="The product terms are documented, but the legal operator, jurisdiction, contact details, and jurisdiction-specific provisions must be confirmed before launch."
+      sideText="These terms are a draft. The legal operator, jurisdiction, contact details, and jurisdiction-specific provisions still need confirmation."
     >
       <section>
         <h2>About these terms</h2>
         <p>MVD is presented under the public name <strong>Research for Purpose</strong>. By installing or using MVD, you agree to comply with these Terms of Use.</p>
         <p className="todo">
-          <strong>TODO before launch:</strong> Identify the legal person or entity offering MVD, its jurisdiction and address, the effective date, eligibility or minimum-age requirements, and the official legal contact.
+          <strong>TODO to finalize these terms:</strong> Identify the legal person or entity offering MVD, its jurisdiction and address, the effective date, eligibility or minimum-age requirements, and the official legal contact.
         </p>
       </section>
 
@@ -89,14 +89,14 @@ export default function TermsPage() {
         <h2>Disclaimers and liability</h2>
         <p>MVD outputs are generated assessments and may contain errors or omissions. The service is provided for informational and research-support purposes and must be evaluated in context.</p>
         <p className="todo">
-          <strong>TODO before launch:</strong> Add jurisdiction-appropriate warranty disclaimers, liability limits, indemnity provisions, termination rights, consumer-rights notices, governing law, and dispute-resolution terms after the legal operator and target jurisdictions are confirmed.
+          <strong>TODO to finalize these terms:</strong> Add jurisdiction-appropriate warranty disclaimers, liability limits, indemnity provisions, termination rights, consumer-rights notices, governing law, and dispute-resolution terms after the legal operator and target jurisdictions are confirmed.
         </p>
       </section>
 
       <section>
         <h2>Contact</h2>
         <p className="todo">
-          <strong>TODO before launch:</strong> Publish the official legal and support contact information and final MVD domain.
+          <strong>TODO to finalize these terms:</strong> Publish the official legal and support contact information and final MVD domain.
         </p>
       </section>
     </PageShell>

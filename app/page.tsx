@@ -4,6 +4,7 @@ import { Disclosure } from "@/components/Disclosure";
 import { Footer } from "@/components/Footer";
 import { Sidebar } from "@/components/Sidebar";
 import { SignalDemo } from "@/components/SignalDemo";
+import { CHROME_STORE_URL } from "@/lib/chrome-store";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 
@@ -27,10 +28,10 @@ export default function Home() {
               <h1 className="display">Pause before a claim <em>travels.</em></h1>
               <p className="hero-copy">MVD surfaces linguistic and rhetorical risk signals in the text you choose. Understand the pattern. Check the context. Verify what matters.</p>
               <div className="hero-actions">
-                <Link className="button" href="/install">Get MVD for Chrome <span aria-hidden="true">↗</span></Link>
+                <a className="button" href={CHROME_STORE_URL}>Get MVD for Chrome <span aria-hidden="true">↗</span></a>
                 <a className="button button-secondary" href="#demo">Try the demonstration</a>
               </div>
-              <p className="hero-note">Assessment aid · Not a truth verdict · Analysis starts only when you choose</p>
+              <p className="hero-note">New users need a beta invite code · Assessment aid, not a truth verdict</p>
             </div>
             <div className="artifact-wrap" aria-label="Illustration of an MVD result">
               <span className="artifact-label">Product view / 01</span>
@@ -105,7 +106,7 @@ export default function Home() {
         <section className="final-cta">
           <div className="wrap final-cta-inner">
             <div><span className="eyebrow">Read with another lens</span><h2 className="display">Inspect. Consider. Verify.</h2></div>
-            <div><p>Add MVD to Chrome and bring a structured pause to the moments when language moves fastest.</p><Link className="button" href="/install">Get MVD for Chrome <span aria-hidden="true">↗</span></Link></div>
+            <div><p>Add MVD to Chrome and bring a structured pause to the moments when language moves fastest.</p><a className="button" href={CHROME_STORE_URL}>Get MVD for Chrome <span aria-hidden="true">↗</span></a></div>
           </div>
         </section>
       </main>

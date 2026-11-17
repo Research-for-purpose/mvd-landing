@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { BrandMark } from "./BrandMark";
+import { CHROME_STORE_URL } from "@/lib/chrome-store";
 
 const primaryLinks = [
   ["01", "Home", "/"],
@@ -94,10 +95,10 @@ export function Sidebar() {
           </nav>
 
           <div className="side-nav-bottom">
-            <div className="side-status"><span aria-hidden="true" /> Chrome extension</div>
-            <Link className="side-nav-cta" href="/install" onClick={() => setOpen(false)}>
+            <div className="side-status"><span aria-hidden="true" /> Available for Chrome</div>
+            <a className="side-nav-cta" href={CHROME_STORE_URL} onClick={() => setOpen(false)}>
               Get MVD <span aria-hidden="true">↗</span>
-            </Link>
+            </a>
             <p>Assessment aid<br />Not a truth verdict</p>
           </div>
         </div>
